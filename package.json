@@ -1,0 +1,18 @@
+{
+  "name": "fx-gui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "run": "electron main.js",
+    "build": "electron-packager . FxPrices --platform=darwin --arch=x64 --icon=currency-conversion.icns"
+  },
+  "author": "Martin Cowie",
+  "dependencies": {
+    "diffusion": "latest"
+  },
+  "devDependencies": {
+    "electron-packager": "^7.0.1",
+    "electron-prebuilt": "^1.1.0"
+  }
+}
