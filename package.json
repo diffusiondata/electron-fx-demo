@@ -1,15 +1,16 @@
 {
   "name": "fx-gui",
+  "productName" : "FxPrices",
   "version": "0.0.1",
-  "description": "",
+  "description": "Demo application showing integration of Diffusion Node client with Electron",
   "main": "main.js",
   "scripts": {
-    "run": "electron main.js",
-    "build": "electron-packager . FxPrices --platform=darwin --arch=x64 --icon=currency-conversion.icns"
+    "start": "electron main.js",
+    "build": "electron-packager . --arch=x64 --icon=currency-conversion.icns --out=build --overwrite=true"
   },
-  "author": "Martin Cowie",
+  "author": "Push Technology",
   "dependencies": {
-    "diffusion": "latest"
+    "diffusion": "^5.7.3"
   },
   "devDependencies": {
     "electron-packager": "^7.0.1",
